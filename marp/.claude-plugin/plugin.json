@@ -1,0 +1,12 @@
+{
+  "name": "marp",
+  "version": "1.0.0",
+  "description": "Marp CLI integration for creating slide decks from Markdown",
+  "author": {
+    "name": "Tom Maffia"
+  },
+  "homepage": "https://tmaffia.com/",
+  "repository": "https://github.com/tmaffia/claude-plugins",
+  "license": "MIT",
+  "keywords": ["marp", "presentation", "slides", "markdown", "pdf", "pptx"]
+}

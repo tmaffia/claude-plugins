@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tmaffia/claude-plugins",
+  "description": "Collection of Claude Code plugins by Tom Maffia",
+  "owner": {
+    "name": "Tom Maffia"
+  },
+  "plugins": [
+    {
+      "name": "marp",
+      "description": "Create and export slide decks using Marp — the Markdown presentation ecosystem. Supports PDF, HTML, PowerPoint (PPTX), and images with smart format inference and design guidance.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Tom Maffia"
+      },
+      "source": "./marp",
+      "category": "productivity",
+      "homepage": "https://github.com/tmaffia/claude-plugins/tree/main/marp",
+      "tags": ["marp", "presentation", "slides", "markdown", "pdf", "pptx", "html"]
+    }
+  ]
+}
