@@ -7,17 +7,18 @@ A collection of plugins for [Claude Code](https://claude.ai/code).
 Add this repository as a marketplace in Claude Code:
 
 ```bash
-claude --marketplace https://github.com/tmaffia/claude-plugins
+claude plugin marketplace add https://github.com/tmaffia/claude-plugins
 ```
 
-Or in Claude Code settings, add:
-```
-https://github.com/tmaffia/claude-plugins
+Then install the Marp plugin:
+
+```bash
+claude plugin install marp
 ```
 
 ## Available Plugins
 
-### [Marp](./marp/)
+### [Marp](./plugins/marp/)
 
 Create and export slide decks using [Marp](https://marp.app/) — the Markdown presentation ecosystem.
 

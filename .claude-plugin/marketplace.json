@@ -13,7 +13,7 @@
       "author": {
         "name": "Tom Maffia"
       },
-      "source": "./marp",
+      "source": "./plugins/marp",
       "category": "productivity",
       "homepage": "https://github.com/tmaffia/claude-plugins/tree/main/marp",
       "tags": ["marp", "presentation", "slides", "markdown", "pdf", "pptx", "html"]
