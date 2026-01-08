@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "tmaffia/claude-plugins",
+  "name": "tmaffia-claude-plugins",
   "description": "Collection of Claude Code plugins by Tom Maffia",
   "owner": {
     "name": "Tom Maffia"
