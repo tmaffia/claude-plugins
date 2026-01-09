@@ -1,31 +1,26 @@
 ---
 name: Marp Authoring
-description: Use when user asks about Marp syntax, Markdown directives, frontmatter options, or how to write/create Marp presentations. Covers slide separation, directives (lead, invert, paginate), images, code blocks, speaker notes, and Marp-specific Markdown patterns. Triggers: "marp syntax", "how to write marp", "marp directives", "marp frontmatter", "marp markdown"
+description: Use when working with Marp presentations—creating, editing, or modifying .md files for Marp. Provides syntax reference, formatting patterns, directives, frontmatter options, slide separation, images, code blocks, speaker notes, and Marp-specific Markdown. Triggers: "marp", "create a presentation", "build slides", "work with marp", "marp file", "marp presentation", "marp syntax", "marp directives", "marp frontmatter", "marp markdown", "edit slides", "presentation.md"
 ---
 
 # Marp Authoring Guide
 
-Marp uses Markdown with extended syntax for creating slide decks. Every Marp presentation starts with YAML frontmatter and uses specific directives for slide separation and formatting.
+Marp uses **CommonMark + GitHub Flavored Markdown (GFM)** for standard formatting, plus Marp-specific extensions for slides.
 
-See `references/syntax.md` for complete syntax details and `references/frontmatter.md` for all frontmatter options.
+> **Need to learn basic Markdown?** See [Markdown Guide](https://www.markdownguide.org/)
 
-## Frontmatter
+---
 
-Every Marp file must begin with YAML frontmatter containing `marp: true`:
+## Quick Start
 
-```yaml
+A minimal Marp presentation:
+
+```markdown
 ---
 marp: true
 theme: gaia
-paginate: true
 ---
-```
 
-## Slide Separation
-
-Use horizontal rules (`---`) to separate slides:
-
-```markdown
 # Slide 1
 
 Content here.
@@ -37,126 +32,23 @@ Content here.
 More content.
 ```
 
-## Directives
+## Marp-Specific Essentials
 
-Marp directives are HTML comments that control slide behavior:
-
-- `<!-- _class: lead -->` - Create title/landing slide with large centered text
-- `<!-- _paginate: false -->` - Hide slide numbers for this slide
-- `<!-- _header: '' -->` - Clear header for this slide
-- `<!-- _footer: '' -->` - Clear footer for this slide
-
-```markdown
-<!-- _class: lead -->
-
-# Presentation Title
-
-**Author Name**
-```
-
-## Slide Deck Directives
-
-Global directives affect multiple slides:
-
-```markdown
-<!-- _class: lead -->
-
-# Title Slide
+| Feature | Syntax |
+|---------|--------|
+| **Enable Marp** | `marp: true` in frontmatter |
+| **Separate slides** | `---` (also `___`, `***`, `- - -`) |
+| **Title slide** | `<!-- _class: lead -->` |
+| **Background image** | `![bg](image.jpg)` |
+| **Image sizing** | `![width:300px](img.jpg)` |
+| **Speaker notes** | `<!-- Note: text -->` |
+| **Incremental reveal** | `<!-- _pause -->` |
 
 ---
 
-<!-- _class: invert -->
+## Reference Files
 
-# Dark Slide
+For complete syntax details, see the reference files:
 
----
-
-<!-- _header: 'Section One' -->
-<!-- _footer: 'Page 1' -->
-
-# Regular Slide
-```
-
-## Markdown Patterns
-
-### Lists
-
-```markdown
-- Regular bullet
-- Another bullet
-
-1. Numbered item
-2. Another numbered item
-```
-
-### Images
-
-```markdown
-![alt text](image.jpg)
-
-![width:300px](image.jpg)
-![height:200px](image.jpg)
-![fit](photo.png)
-
-![bg](background.jpg)         # Background image
-![bg fit](photo.png)          # Fitted background
-![bg opacity:0.5](img.png)    # Semi-transparent bg
-```
-
-### Code Blocks
-
-```markdown
-\`\`\`javascript
-function hello() {
-  console.log("Hello Marp!");
-}
-\`\`\`
-```
-
-### Formatting
-
-```markdown
-**bold text**
-*italic text*
-~~strikethrough~~
-
-`inline code`
-
-[Link text](https://example.com)
-```
-
-### Tables
-
-```markdown
-| Header 1 | Header 2 |
-|----------|----------|
-| Cell 1   | Cell 2   |
-```
-
-## Speaker Notes
-
-Add presenter notes (visible in PDF with `--pdf-notes`):
-
-```markdown
-Slide content.
-
-<!-- Note: This is a speaker note that explains the slide in more detail. -->
-```
-
-## Split Slides
-
-Split content across multiple slides automatically:
-
-```markdown
-<!-- _class: split -->
-
-# Two Column Layout
-
-Left column content.
-
----
-
-Right column content.
-```
-
-For detailed syntax reference, see `references/syntax.md`. For all frontmatter options, see `references/frontmatter.md`.
+- **`references/syntax.md`** - Slide separation, directives, images, fragments, speaker notes, code blocks, math
+- **`references/frontmatter.md`** - All frontmatter options (theme, paginate, style, etc.)
