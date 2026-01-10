@@ -1,6 +1,6 @@
 ---
-name: Marp
-description: Use when working with Marp presentations—creating, editing, or modifying .md files for Marp. Covers syntax (directives, slide separation, images, fragments), frontmatter options, and design principles (layout patterns, visual hierarchy, content density, typography). Triggers: "marp", "create a presentation", "build slides", "work with marp", "marp file", "marp presentation", "marp syntax", "marp directives", "marp frontmatter", "make slides look good", "improve design", "layout help"
+name: marp
+description: Use when working with Marp presentations—creating, editing, or modifying .md files for Marp. Covers syntax (directives, slide separation, images, fragments), frontmatter options, and design principles (layout patterns, visual hierarchy, content density, typography). Trigger examples include marp, create a presentation, build slides
 ---
 
 # Marp Guide
